@@ -109,7 +109,7 @@ function bulletObject(x, y, len, speed, color, type){
 	this.yPos = y;
 	this.len = len;
 	this.speed = speed;
-	this.shotSound = new Audio("Sounds/shot.wav");
+	this.shotSound = new Audio("../Sounds/shot.wav");
 	this.color = color;
 	this.type = type;
 }
@@ -163,8 +163,8 @@ function enemyObject(){
 	this.shipY = Math.floor(this.shipYDiff + Math.random()*(canvas.height - (this.shipYDiff*2)));
 	this.speedX = Math.floor(3 + Math.random()*3);
 	this.speedX = 0 - this.speedX;
-	this.deadSound = new Audio("Sounds/dead.wav");
-	this.hitSound = new Audio("Sounds/hit.wav");
+	this.deadSound = new Audio("../Sounds/dead.wav");
+	this.hitSound = new Audio("../Sounds/hit.wav");
 	
 	this.val = Math.floor(Math.random() * 11);
 	
